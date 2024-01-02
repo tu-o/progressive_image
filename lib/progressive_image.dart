@@ -449,8 +449,8 @@ class _ProgressiveImageState extends State<ProgressiveImage> {
               ? 1.0
               : 0.0,
           child: ClipRect(
-            child: BackdropFilter(
-              filter:
+            child: ImageFiltered(
+              imageFilter:
                   ImageFilter.blur(sigmaX: widget.blur, sigmaY: widget.blur),
               child: Container(
                 // height: apparentHeight(),
